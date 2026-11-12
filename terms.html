@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-zcode-design>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of service — GHOSTTRACE</title>
+<meta name="description" content="Terms of service for the GHOSTTRACE open-source project.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0e1a;--surface:#0d1224;--line:#1e293b;--text:#e2e8f0;--muted:#94a3b8;--faint:#64748b;--accent:#22d3ee;
+--font-display:"Archivo",system-ui,"Segoe UI",sans-serif;--font-body:"Archivo",system-ui,"Segoe UI",sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.7}
+.wrap{max-width:720px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,32px) 80px}
+a{color:var(--accent);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--faint)}
+h1{font-family:var(--font-display);font-weight:800;font-size:clamp(30px,5vw,44px);letter-spacing:-.02em;margin:14px 0 8px;line-height:1.1}
+.updated{color:var(--faint);font-size:14px;margin-bottom:40px}
+h2{font-family:var(--font-display);font-weight:700;font-size:21px;margin:40px 0 12px;letter-spacing:-.01em}
+p,li{color:var(--muted);font-size:15.5px}
+ul{padding-left:22px;margin:10px 0}
+li{margin:6px 0}
+strong,em{color:var(--text);font-style:normal}
+code{font-family:var(--font-mono);font-size:13.5px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:2px 6px}
+footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);color:var(--faint);font-size:13.5px}
+footer nav{display:flex;gap:18px;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap" data-od-id="terms">
+<p class="eyebrow">GHOSTTRACE · Legal</p>
+<h1>Terms of service</h1>
+<p class="updated">Last updated: 12 November 2026</p>
+
+<h2>1. The software</h2>
+<p>GHOSTTRACE is free, open-source software released under the <strong>MIT License</strong>. It is provided <em>"as is"</em>, without warranty of any kind, express or implied, including fitness for a particular purpose. You are free to use, copy, modify and redistribute it under the terms of the license.</p>
+
+<h2>2. Authorized use</h2>
+<ul>
+<li>Use GHOSTTRACE only on <strong>accounts, devices and data you own or are explicitly authorized to monitor</strong>.</li>
+<li>When monitoring another person's devices or accounts, you are responsible for obtaining their informed consent and for complying with the laws of your jurisdiction (including workplace-surveillance and privacy law).</li>
+<li>Connecting integrations must follow each provider's terms of service. GHOSTTRACE uses official APIs and the permissions you grant through their standard OAuth consent flows.</li>
+</ul>
+
+<h2>3. Your responsibilities as operator</h2>
+<ul>
+<li>You choose where an instance runs, which secrets it holds and who can see its data. Rotate the default <code>SECRET_KEY</code> and <code>TOKEN_ENCRYPTION_KEY</code>; never commit <code>.env</code> files.</li>
+<li>You are responsible for securing your deployment (TLS, backups, access control) and for any data processed by your instance.</li>
+<li>Retention is yours to set; the default window is 90 days.</li>
+</ul>
+
+<h2>4. No service, no liability</h2>
+<p>There is no hosted GHOSTTRACE service to subscribe to, suspend or terminate. The project's contributors do not operate your instance, cannot access your data, and are not liable for any claim, damages or data loss arising from your use of the software, to the maximum extent permitted by law.</p>
+
+<h2>5. Third-party services</h2>
+<p>GHOSTTRACE interacts with Google, GitHub, ActivityWatch, Wazuh and Apple device services. Those services are governed by their own terms and privacy policies; their APIs, scopes and availability change without notice, and GHOSTTRACE reports such gaps honestly rather than guaranteeing coverage.</p>
+
+<h2>6. Changes</h2>
+<p>These terms may be updated as the project evolves. Continued use of a newer version constitutes acceptance of the current terms posted here.</p>
+
+<footer>
+  <span>© 2026 GHOSTTRACE contributors · MIT License</span>
+  <nav><a href="index.html">Home</a><a href="privacy.html">Privacy policy</a></nav>
+</footer>
+</div>
+</body>
+</html>
